@@ -5,11 +5,13 @@
  */
 package ec.edu.est.Clases;
 
+import ec.edu.est.Interfaz.Acciones;
+
 /**
  *
  * @author 59398
  */
-public final class PezPiedra extends Acuatico{
+public final class PezPiedra extends Acuatico implements Acciones{
     
     private boolean camuflaje;
     private boolean neurotoxina;
@@ -78,11 +80,21 @@ public final class PezPiedra extends Acuatico{
 
     @Override
     public String toString() {
-        return "PezPiedra{" + "camuflaje=" + camuflaje + ", neurotoxina=" + neurotoxina + ", resisteFueraAgua=" + resisteFueraAgua + ", exotico=" + exotico + '}';
+        return super.toString()+"PezPiedra{" + "camuflaje=" + camuflaje + ", neurotoxina=" + neurotoxina + ", resisteFueraAgua=" + resisteFueraAgua + ", exotico=" + exotico + '}';
     }
 
     @Override
     public void sangreFria() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void comer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void reproducirse() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

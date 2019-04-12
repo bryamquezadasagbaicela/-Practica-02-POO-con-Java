@@ -11,4 +11,8 @@ package ec.edu.est.Interfaz;
  */
 public interface Acciones {
     
+    public abstract void comer();
+    public abstract void reproducirse();
+    
+    
 }

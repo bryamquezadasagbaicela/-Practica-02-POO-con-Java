@@ -5,11 +5,13 @@
  */
 package ec.edu.est.Clases;
 
+import ec.edu.est.Interfaz.Acciones;
+
 /**
  *
  * @author 59398
  */
-public final class Megalodon extends Acuatico {
+public final class Megalodon extends Acuatico implements Acciones {
     
     private boolean depredadorSolitario;
     private int numeroIlerasDientes;
@@ -78,11 +80,21 @@ public final class Megalodon extends Acuatico {
     
     @Override
     public String toString() {
-        return "Megalodon{" + "depredadorSolitario=" + depredadorSolitario + ", numeroIlerasDientes=" + numeroIlerasDientes + ", canibal=" + canibal + ", extinto=" + extinto + '}';
+        return super.toString()+"Megalodon{" + "depredadorSolitario=" + depredadorSolitario + ", numeroIlerasDientes=" + numeroIlerasDientes + ", canibal=" + canibal + ", extinto=" + extinto + '}';
     }
 
     @Override
     public void sangreFria() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void comer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void reproducirse() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

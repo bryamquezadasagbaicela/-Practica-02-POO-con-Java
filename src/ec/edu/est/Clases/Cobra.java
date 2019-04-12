@@ -5,11 +5,13 @@
  */
 package ec.edu.est.Clases;
 
+import ec.edu.est.Interfaz.Acciones;
+
 /**
  *
  * @author 59398
  */
-public final class Cobra extends Terrestre{
+public final class Cobra extends Terrestre implements Acciones {
     
     private boolean invertebrado;
     private boolean venenoso;
@@ -78,11 +80,21 @@ public final class Cobra extends Terrestre{
     
     @Override
     public String toString() {
-        return "Cobra{" + "invertebrado=" + invertebrado + ", venenoso=" + venenoso + ", mudarPiel=" + mudarPiel + ", sensorInfrarrojo=" + sensorInfrarrojo + '}';
+        return super.toString()+"Cobra{" + "invertebrado=" + invertebrado + ", venenoso=" + venenoso + ", mudarPiel=" + mudarPiel + ", sensorInfrarrojo=" + sensorInfrarrojo + '}';
     }
 
     @Override
     public void hambre() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void comer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void reproducirse() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

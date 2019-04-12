@@ -5,11 +5,13 @@
  */
 package ec.edu.est.Clases;
 
+import ec.edu.est.Interfaz.Acciones;
+
 /**
  *
  * @author 59398
  */
-public final class TiranosaurioRex extends Terrestre{
+public final class TiranosaurioRex extends Terrestre implements Acciones {
     
     private boolean extinto;
     private boolean alimentoCarroño;
@@ -79,11 +81,21 @@ public final class TiranosaurioRex extends Terrestre{
     
     @Override
     public String toString() {
-        return "TiranosaurioRex{" + "extinto=" + extinto + ", alimentoCarro\u00f1o=" + alimentoCarroño + ", capacidadSensorial=" + capacidadSensorial + ", canibal=" + canibal + '}';
+        return super.toString()+"TiranosaurioRex{" + "extinto=" + extinto + ", alimentoCarro\u00f1o=" + alimentoCarroño + ", capacidadSensorial=" + capacidadSensorial + ", canibal=" + canibal + '}';
     }
 
     @Override
     public void hambre() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void comer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void reproducirse() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
