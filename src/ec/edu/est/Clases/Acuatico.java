@@ -9,7 +9,9 @@ package ec.edu.est.Clases;
  *
  * @author 59398
  */
-public class Acuatico extends Carnivoro {
+public abstract class Acuatico extends Carnivoro {
+    
+    public abstract void sangreFria() ;
     
     private int numeroAletas;
     private boolean aguaSalada;

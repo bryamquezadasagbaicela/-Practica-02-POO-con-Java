@@ -80,6 +80,11 @@ public class Megalodon extends Acuatico {
     public String toString() {
         return "Megalodon{" + "depredadorSolitario=" + depredadorSolitario + ", numeroIlerasDientes=" + numeroIlerasDientes + ", canibal=" + canibal + ", extinto=" + extinto + '}';
     }
+
+    @Override
+    public void sangreFria() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }

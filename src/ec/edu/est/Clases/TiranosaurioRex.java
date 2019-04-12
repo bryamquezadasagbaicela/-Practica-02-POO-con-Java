@@ -81,6 +81,11 @@ public class TiranosaurioRex extends Terrestre{
     public String toString() {
         return "TiranosaurioRex{" + "extinto=" + extinto + ", alimentoCarro\u00f1o=" + alimentoCarroño + ", capacidadSensorial=" + capacidadSensorial + ", canibal=" + canibal + '}';
     }
+
+    @Override
+    public void hambre() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     

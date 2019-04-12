@@ -9,7 +9,9 @@ package ec.edu.est.Clases;
  *
  * @author 59398
  */
-public class Terrestre extends Carnivoro {
+public abstract class Terrestre extends Carnivoro {
+    
+    public abstract void  hambre();
     
     private int numeroGarras;
     private int numeroPatas;

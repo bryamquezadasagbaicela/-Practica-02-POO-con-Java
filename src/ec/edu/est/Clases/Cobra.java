@@ -80,6 +80,11 @@ public class Cobra extends Terrestre{
     public String toString() {
         return "Cobra{" + "invertebrado=" + invertebrado + ", venenoso=" + venenoso + ", mudarPiel=" + mudarPiel + ", sensorInfrarrojo=" + sensorInfrarrojo + '}';
     }
+
+    @Override
+    public void hambre() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }

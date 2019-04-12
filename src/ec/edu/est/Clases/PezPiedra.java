@@ -80,6 +80,11 @@ public class PezPiedra extends Acuatico{
     public String toString() {
         return "PezPiedra{" + "camuflaje=" + camuflaje + ", neurotoxina=" + neurotoxina + ", resisteFueraAgua=" + resisteFueraAgua + ", exotico=" + exotico + '}';
     }
+
+    @Override
+    public void sangreFria() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }
