@@ -9,7 +9,7 @@ package ec.edu.est.Clases;
  *
  * @author 59398
  */
-public class Cobra extends Terrestre{
+public final class Cobra extends Terrestre{
     
     private boolean invertebrado;
     private boolean venenoso;

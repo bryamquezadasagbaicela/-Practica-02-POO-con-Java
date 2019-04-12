@@ -9,7 +9,7 @@ package ec.edu.est.Clases;
  *
  * @author 59398
  */
-public class Megalodon extends Acuatico {
+public final class Megalodon extends Acuatico {
     
     private boolean depredadorSolitario;
     private int numeroIlerasDientes;

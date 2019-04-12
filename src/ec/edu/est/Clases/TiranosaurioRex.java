@@ -9,7 +9,7 @@ package ec.edu.est.Clases;
  *
  * @author 59398
  */
-public class TiranosaurioRex extends Terrestre{
+public final class TiranosaurioRex extends Terrestre{
     
     private boolean extinto;
     private boolean alimentoCarroño;

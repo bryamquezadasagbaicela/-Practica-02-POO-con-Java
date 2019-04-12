@@ -9,7 +9,7 @@ package ec.edu.est.Clases;
  *
  * @author 59398
  */
-public class PezPiedra extends Acuatico{
+public final class PezPiedra extends Acuatico{
     
     private boolean camuflaje;
     private boolean neurotoxina;
