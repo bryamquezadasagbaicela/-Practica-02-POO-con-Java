@@ -6,34 +6,49 @@
 package ec.edu.est.Clases;
 
 /**
+ * en esta clase instancia los atributos
  *
- * @author 59398
+ * @author Quezada Brtam
  */
 public abstract class Acuatico extends Carnivoro {
-    
-    public abstract void sangreFria() ;
-    
+
+    /**
+     * declaracion metodo abstracto
+     */
+    public abstract void sangreFria();
+
+    /**
+     * Declaracion de variables
+     */
     private int numeroAletas;
     private boolean aguaSalada;
     private int numeroEspinas;
     private boolean venenoso;
 
-    public Acuatico(){
-        
+    /**
+     * contructores
+     */
+    public Acuatico() {
+
     }
-    
+
     public Acuatico(int numeroAletas, boolean aguaSalada) {
         this.numeroAletas = numeroAletas;
         this.aguaSalada = aguaSalada;
     }
 
-    public Acuatico(int numeroAletas, boolean aguaSalada, int numeroEspinas, boolean venenoso) {
+    public Acuatico(String nombre, String tipoReproduccion, String sexo, String termino, int numeroAletas, boolean aguaSalada, int numeroEspinas, boolean venenoso) {
+        super(nombre, tipoReproduccion, sexo, termino);
         this.numeroAletas = numeroAletas;
         this.aguaSalada = aguaSalada;
         this.numeroEspinas = numeroEspinas;
         this.venenoso = venenoso;
     }
 
+    /**
+     * getters y setters atributos clase acuatico
+     *
+     */
     public int getNumeroAletas() {
         return numeroAletas;
     }
@@ -66,22 +81,28 @@ public abstract class Acuatico extends Carnivoro {
         this.venenoso = venenoso;
     }
 
-    public void cambiarAgua(){
-        
+    /**
+     * creacion de metodos
+     */
+    public void cambiarAgua() {
+
     }
-    
-    public void perderEspina(){
-        
+
+    public void perderEspina() {
+
     }
-    
-    public void envenenar(){
-        
+
+    public void envenenar() {
+
     }
-    
+
+    /**
+     *
+     * toString imprime los datos clase padre carnivoro y clase hija acuatico
+     */
     @Override
     public String toString() {
-        return super.toString()+ "Acuatico{" + "numeroAletas=" + numeroAletas + ", aguaSalada=" + aguaSalada + ", numeroEspinas=" + numeroEspinas + ", venenoso=" + venenoso + '}';
+        return super.toString() + "\n\tAcuatico" + "\n\tnumeroAletas=" + numeroAletas + ", \n\taguaSalada=" + aguaSalada + ", \n\tnumeroEspinas=" + numeroEspinas + ", \n\tvenenoso=" + venenoso;
     }
-    
-    
+
 }

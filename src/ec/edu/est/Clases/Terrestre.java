@@ -6,34 +6,49 @@
 package ec.edu.est.Clases;
 
 /**
+ * en esta clase instancia los atributos, getters y setters, constructores y
+ * metodos de la clase padre Terrestre
  *
- * @author 59398
+ * @author Quezada Bryam
  */
 public abstract class Terrestre extends Carnivoro {
-    
-    public abstract void  hambre();
-    
+
+    /**
+     * declaracion metodo abstracto
+     */
+    public abstract void hambre();
+    /**
+     * declaracion de variables clase terrestre
+     */
     private int numeroGarras;
     private int numeroPatas;
     private int numeroDientesCaninos;
     private boolean depredadorSolitario;
 
-    public Terrestre(){
-        
+    /**
+     * creacion de los constructores
+     */
+    public Terrestre() {
+
     }
 
     public Terrestre(int numeroGarras, int numeroPatas) {
         this.numeroGarras = numeroGarras;
         this.numeroPatas = numeroPatas;
     }
-    
-    public Terrestre(int numeroGarras, int numeroPatas, int numeroDientesCaninos, boolean depredadorSolitario) {
+
+    public Terrestre(String nombre, String tipoReproduccion, String sexo, String termino, int numeroGarras, int numeroPatas, int numeroDientesCaninos, boolean depredadorSolitario) {
+        super(nombre, tipoReproduccion, sexo, termino);
         this.numeroGarras = numeroGarras;
         this.numeroPatas = numeroPatas;
         this.numeroDientesCaninos = numeroDientesCaninos;
         this.depredadorSolitario = depredadorSolitario;
     }
 
+    /**
+     * getters y setters atributos de la clase Terrestre
+     *
+     */
     public int getNumeroGarras() {
         return numeroGarras;
     }
@@ -66,23 +81,28 @@ public abstract class Terrestre extends Carnivoro {
         this.depredadorSolitario = depredadorSolitario;
     }
 
-    public void cambiarGarra(){
-        
+    /**
+     * creacion de metodos
+     */
+    public void cambiarGarra() {
+
     }
-    
+
     public void cambiarDientes() {
-        
+
     }
-    
-    public void cambiarManada(){
-        
+
+    public void cambiarManada() {
+
     }
-    
+
+    /**
+     * toString imprime los datos clase padre carnivoro y clase hija terrestre
+     *
+     */
     @Override
     public String toString() {
-        return super.toString()+ "Terrestre{" + "numeroGarras=" + numeroGarras + ", numeroPatas=" + numeroPatas + ", numeroDientesCaninos=" + numeroDientesCaninos + ", depredadorSolitario=" + depredadorSolitario + '}';
+        return super.toString() + "\n\tTerrestre" + "\n\tnumeroGarras=" + numeroGarras + ", \n\tnumeroPatas=" + numeroPatas + ", \n\tnumeroDientesCaninos=" + numeroDientesCaninos + ", \n\tdepredadorSolitario=" + depredadorSolitario;
     }
-    
-    
-    
+
 }

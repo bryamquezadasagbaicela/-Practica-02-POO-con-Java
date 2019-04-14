@@ -7,25 +7,30 @@ package ec.edu.est.Clases;
 
 /**
  *
- * @author 59398
+ * @author Quezada Bryam
  */
 public class Carnivoro {
-    
+
+    /**
+     * declaro las variables de Carnivoro
+     */
     private String nombre;
     private String tipoReproduccion;
     private String sexo;
     private String termino;
 
-    
-    public Carnivoro(){
-        
+    /**
+     * creacion de los constructores
+     */
+    public Carnivoro() {
+
     }
 
     public Carnivoro(String nombre, String tipoReproduccion) {
         this.nombre = nombre;
         this.tipoReproduccion = tipoReproduccion;
     }
-    
+
     public Carnivoro(String nombre, String tipoReproduccion, String sexo, String termino) {
         this.nombre = nombre;
         this.tipoReproduccion = tipoReproduccion;
@@ -33,6 +38,10 @@ public class Carnivoro {
         this.termino = termino;
     }
 
+    /**
+     * creacion de los getters y setters
+     *
+     */
     public String getNombre() {
         return nombre;
     }
@@ -49,6 +58,10 @@ public class Carnivoro {
         this.tipoReproduccion = tipoReproduccion;
     }
 
+    /**
+     *
+     *
+     */
     public String getSexo() {
         return sexo;
     }
@@ -64,6 +77,5 @@ public class Carnivoro {
     public void setTermino(String termino) {
         this.termino = termino;
     }
-    
-    
+
 }

@@ -8,32 +8,45 @@ package ec.edu.est.Clases;
 import ec.edu.est.Interfaz.Acciones;
 
 /**
+ * esta clase instacia los atributos, getters y setters, constructores y metodos
+ * de la clase hija PezPiedra
  *
- * @author 59398
+ * @author Quezada Bryam
  */
-public final class PezPiedra extends Acuatico implements Acciones{
-    
+public final class PezPiedra extends Acuatico implements Acciones {
+
+    /**
+     * declaracion de las variables de la clase PezPiedra
+     */
     private boolean camuflaje;
     private boolean neurotoxina;
     private boolean resisteFueraAgua;
     private boolean exotico;
 
+    /**
+     * creacion de los constructores
+     */
     public PezPiedra() {
-        
+
     }
-    
+
     public PezPiedra(boolean camuflaje, boolean neurotoxina) {
         this.camuflaje = camuflaje;
         this.neurotoxina = neurotoxina;
     }
 
-    public PezPiedra(boolean camuflaje, boolean neurotoxina, boolean resisteFueraAgua, boolean exotico) {
+    public PezPiedra(String nombre, String tipoReproduccion, String sexo, String termino, int numeroAletas, boolean aguaSalada, int numeroEspinas, boolean venenoso, boolean camuflaje, boolean neurotoxina, boolean resisteFueraAgua, boolean exotico) {
+        super(nombre, tipoReproduccion, sexo, termino, numeroAletas, aguaSalada, numeroEspinas, venenoso);
         this.camuflaje = camuflaje;
         this.neurotoxina = neurotoxina;
         this.resisteFueraAgua = resisteFueraAgua;
         this.exotico = exotico;
     }
 
+    /**
+     * creacion de getters y setters
+     *
+     */
     public boolean isCamuflaje() {
         return camuflaje;
     }
@@ -65,38 +78,53 @@ public final class PezPiedra extends Acuatico implements Acciones{
     public void setExotico(boolean exotico) {
         this.exotico = exotico;
     }
-    
-    public void controlarNeurotoxina(){
-        
-    }
-    
-    public void modificarCamuflaje(){
-        
-    }
-    
-    public void cambiarAgua(){
-        
+
+    /**
+     * creacion de metodos
+     */
+    public void controlarNeurotoxina() {
+
     }
 
-    @Override
-    public String toString() {
-        return super.toString()+"PezPiedra{" + "camuflaje=" + camuflaje + ", neurotoxina=" + neurotoxina + ", resisteFueraAgua=" + resisteFueraAgua + ", exotico=" + exotico + '}';
+    public void modificarCamuflaje() {
+
     }
 
+    public void cambiarAgua() {
+
+    }
+
+    /**
+     * metodo de la clase interfaz que indica sangreFria
+     */
     @Override
     public void sangreFria() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("La Cobra " + this.getNombre() + "\tNaja Naja" + " \tEs de sangre fria");
     }
 
+    /**
+     * metodo de la clase interfaz que indica comer
+     */
     @Override
     public void comer() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("La Cobra " + this.getNombre() + "\tMemo" + " \tVa a comer");
     }
 
+    /**
+     * metodo de la clase interfax que indica reproducirse
+     */
     @Override
     public void reproducirse() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("La Pez Piedra " + this.getNombre() + "\tMemo" + " \tVa a reproducirse");
     }
-    
-    
+
+    /**
+     *
+     * toStrin que imprime los atributos de la clase abuelo Carnivoros de la
+     * clase padre Acuatico de la clase hija pexPiedra
+     */
+    @Override
+    public String toString() {
+        return super.toString() + "\n\tPezPiedra" + "\n\tcamuflaje=" + camuflaje + ", \n\tneurotoxina=" + neurotoxina + ", \n\tresisteFueraAgua=" + resisteFueraAgua + ", \n\texotico=" + exotico;
+    }
 }

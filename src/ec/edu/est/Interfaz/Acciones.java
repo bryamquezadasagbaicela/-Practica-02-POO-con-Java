@@ -6,13 +6,17 @@
 package ec.edu.est.Interfaz;
 
 /**
+ * En esta clase genera metodos abstractos para implementar en las clases hijas
  *
- * @author 59398
+ * @author Bryam Quezada
  */
 public interface Acciones {
-    
+
+    /**
+     * declarar metodos abstractos
+     */
     public abstract void comer();
+
     public abstract void reproducirse();
-    
-    
+
 }
