@@ -99,7 +99,7 @@ public final class PezPiedra extends Acuatico implements Acciones {
      */
     @Override
     public void sangreFria() {
-        System.out.println("La Cobra " + this.getNombre() + "\tNaja Naja" + " \tEs de sangre fria");
+        System.out.println("El Pez Piedra " + this.getNombre() + "\tMemo" + " \tEs de sangre fria");
     }
 
     /**
@@ -107,7 +107,7 @@ public final class PezPiedra extends Acuatico implements Acciones {
      */
     @Override
     public void comer() {
-        System.out.println("La Cobra " + this.getNombre() + "\tMemo" + " \tVa a comer");
+        System.out.println("El Pez Piedra " + this.getNombre() + "\tMemo" + " \tVa a comer");
     }
 
     /**

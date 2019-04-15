@@ -65,8 +65,15 @@ public class Main {
                 System.out.println("Tiranosaurio Rex: " + temp);
                 System.out.println("-----------------------------------------");
             }
-
+        /**
+         * creacion de la clase anonimo 
+         */
+        
+        Carnivoro anonimo = new Carnivoro("Cocodrilo", "Huevo", "Macho", "Zoofago");
+        System.out.println(anonimo);
         }
+
+
 
         /**
          * aqui imprime las acciones de cada animal ingresado para ver el
@@ -75,7 +82,7 @@ public class Main {
          */
         System.out.println("-------------------------------------------------");
         Cobra cobr1 = new Cobra();
-        System.out.println("\t\nCobra");
+        System.out.println("\t\tCobra");
         cobr1.setNombre("Cobra");
         cob1.comer();
         cob1.reproducirse();
@@ -84,7 +91,7 @@ public class Main {
 
         System.out.println("-------------------------------------------------");
         TiranosaurioRex tiran1 = new TiranosaurioRex();
-        System.out.println("\t\nTiranosaurioRex");
+        System.out.println("\t\tTiranosaurioRex");
         tiran1.setNombre("Tiranosaurio Rex");
         tirano1.comer();
         tirano1.reproducirse();
@@ -93,7 +100,7 @@ public class Main {
 
         System.out.println("-------------------------------------------------");
         Megalodon mega1 = new Megalodon();
-        System.out.println("\t\nMegalodon");
+        System.out.println("\t\tMegalodon");
         mega1.setNombre("Megalodon");
         meg1.comer();
         meg1.reproducirse();
@@ -102,7 +109,7 @@ public class Main {
 
         System.out.println("-------------------------------------------------");
         PezPiedra pezp1 = new PezPiedra();
-        System.out.println("\t\nPezPiedra");
+        System.out.println("\t\tPezPiedra");
         pezp1.setNombre("Pez Piedra");
         pez1.comer();
         pez1.reproducirse();
